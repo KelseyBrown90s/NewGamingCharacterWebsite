@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Gaming Character Website</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div{
+            border-style:groove;
+            border-color:blueviolet;
+            padding: 5px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <p>Please add your ideas for new chaarcters, and we will all meet on zoom to discuss all options brought!</p>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="Character">Character</label>
+                    <input type="text" class="form-control" id="character" placeholder="Character">
+                </div>
+            </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="Ability">Ability</label>
+                    <input type="text" class="form-control" id="ability" placeholder="Ability">
+                </div>
+            </div>
+
+            <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+    </div>
+</div>    
+<div class="table-responsive-lg">
+    <table id="list" class="table table-dark table-hover" >
+        <tr>
+            <th scope="col" id="Name">Name</th>
+            <th scope="col" id="Character">New Character Name</th>
+            <th scope="col" id="Ability">Ability</th>
+        </tr>
+    </table>
+
+    <script src="GameWebsiteAdder.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+<!--This code features card and form to where the user will be able to fill in the table.-->
